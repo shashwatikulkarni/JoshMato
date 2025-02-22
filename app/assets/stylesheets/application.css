@@ -13,3 +13,20 @@
  *= require_tree .
  *= require_self
  */
+/* .card-group{
+   display: flex;
+   flex-direction: column;
+   .card{
+    margin-bottom: card-group-margin;
+   }
+} */
+
+.border-dark{
+    color: black;
+    border-radius: 20px;
+}
+
+.card-img-top{
+    height: 300px;
+    width: 250px;
+}

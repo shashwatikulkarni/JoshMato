@@ -1,14 +1,20 @@
 <p style="color: green"><%= notice %></p>
 
 <h1>Recipes</h1>
-
-<div id="recipes">
-  <% @recipes.each do |recipe| %>
-    <%= render recipe %>
-    <p>
-      <%= link_to "Show this recipe", recipe %>
-    </p>
-  <% end %>
+<div class = "card-group">
+<% @recipes.each do |recipe| %>
+  <div class="col-xs-12 col-sm-4 col-md-3 mx-3 my-3 border border-dark">
+    <br>
+      <img class="card-img-top p-2" src="<%= recipe.picture_url if recipe.picture? %>" alt="Product Image">
+      <div class="card-body ">
+        <center>
+        <h5 class="card-title"><%= recipe.name %></h5>
+        <p class="card-text"><%= recipe.description %></p>
+        <a href="/recipes/<%= recipe.id %>" class="btn btn-primary mb-3">Show More</a>
+        </center>
+      </div>
+  </div>
+<% end %>
 </div>
-
-<%= link_to "New recipe", new_recipe_path %>
+<br>
+<a href="<%= new_recipe_path %>" class="btn btn-primary">Add New Recipe</a>
