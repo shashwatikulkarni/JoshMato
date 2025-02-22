@@ -1,0 +1,36 @@
+<div class="container text-center mt-5">
+  <h1 class="display-4 text-primary fw-bold">Welcome to JoshMato</h1>
+  <p class="lead text-muted">Meet Our Amazing Team Behind JoshMato</p>
+
+  <!-- Team Members Section -->
+  <h2 class="mt-5 text-danger fw-bold">Our Team Members</h2>
+  <div class="row justify-content-center mt-4">
+    <% team_members = ["Akash ", "Yashraj", "Shashwati", "Pritesh", "Kshitija", "Manisha", "Komal", "Shrutika"] %>
+    <% team_members.each do |member| %>
+      <div class="col-md-3">
+        <div class="card shadow-lg p-3 mb-4 bg-white rounded">
+          <div class="card-body">
+            <h5 class="card-title fw-bold text-success"><%= member %></h5>
+            <p class="card-text text-muted">Team Member</p>
+          </div>
+        </div>
+      </div>
+    <% end %>
+  </div>
+
+  <!-- Guides Section -->
+  <h2 class="mt-5 text-primary fw-bold">Our Guides</h2>
+  <div class="row justify-content-center mt-4">
+    <% guides = ["Rohit", " Mehnaz"] %>
+    <% guides.each do |guide| %>
+      <div class="col-md-3">
+        <div class="card shadow-lg p-3 mb-4 bg-light rounded">
+          <div class="card-body">
+            <h5 class="card-title fw-bold text-warning"><%= guide %></h5>
+            <p class="card-text text-muted">Guide & Mentor</p>
+          </div>
+        </div>
+      </div>
+    <% end %>
+  </div>
+</div>
