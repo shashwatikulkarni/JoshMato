@@ -1,4 +1,4 @@
-/*
+    /*
  * This is a manifest file that'll be compiled into application.css, which will include all the files
  * listed below.
  *
@@ -13,20 +13,43 @@
  *= require_tree .
  *= require_self
  */
-/* .card-group{
-   display: flex;
-   flex-direction: column;
-   .card{
-    margin-bottom: card-group-margin;
-   }
-} */
-
-.border-dark{
-    color: black;
-    border-radius: 20px;
-}
-
-.card-img-top{
-    height: 300px;
-    width: 250px;
-}
+    
+    .card-group {
+        display: flex;
+        flex-direction: column;
+        .card {
+            margin-bottom: card-group-margin;
+        }
+    }
+    
+    .border-dark {
+        color: black;
+        border-radius: 20px;
+    }
+    
+    .card-img-top {
+        height: 300px;
+        width: 250px;
+    }
+    /* Background image for the entire About page */
+    
+    .about-page {
+        background: url('/assets/background.jpg') no-repeat center center fixed;
+        background-size: cover;
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 50px;
+    }
+    /* Make content stand out */
+    
+    .about-content {
+        background: rgba(255, 255, 255, 0.8);
+        /* Semi-transparent white background */
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        max-width: 900px;
+        text-align: center;
+    }
